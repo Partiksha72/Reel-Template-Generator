@@ -1,0 +1,23 @@
+# env & secrets
+.env
+backend/.env
+frontend/.env*.local
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# node
+node_modules/
+.next/
+out/
+
+# runtime data
+data/
+tmp_test/
+*.log
+
+# os
+.DS_Store

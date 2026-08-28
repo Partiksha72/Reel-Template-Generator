@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #120a0e;
+  color: #f5ebd8;
+}
+
+::selection {
+  background: rgba(212, 165, 55, 0.35);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(212, 165, 55, 0.25) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(212, 165, 55, 0.22);
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@layer components {
+  .label-caps {
+    @apply text-[11px] font-semibold uppercase tracking-[0.22em] text-muted;
+  }
+  .gold-rule {
+    @apply h-px w-12 bg-gold/60;
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 bg-gold px-5 py-2.5 text-sm font-bold uppercase tracking-wider text-ink transition hover:bg-goldsoft disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 border border-line px-4 py-2.5 text-sm font-semibold uppercase tracking-wider text-sand transition hover:border-gold/50 hover:text-cream disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .panel {
+    @apply border border-line bg-coal;
+  }
+  .input-dark {
+    @apply w-full border border-line bg-ink px-4 py-3 text-sm text-cream placeholder:text-muted/60 focus:border-gold/60 focus:outline-none;
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 0.35; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+.animate-pulse-dot {
+  animation: pulse-dot 1.4s ease-in-out infinite;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-rise {
+  animation: rise 0.45s ease-out both;
+}
+
+@keyframes caption-pop {
+  0% { opacity: 0; transform: scale(0.92); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.caption-pop {
+  animation: caption-pop 0.14s ease-out both;
+}

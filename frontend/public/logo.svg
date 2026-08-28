@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
+  <!-- Nagrik brand mark — replace this file with the official logo asset if provided -->
+  <rect width="480" height="480" rx="72" fill="#3A0A16"/>
+  <circle cx="240" cy="240" r="182" fill="none" stroke="#D4A537" stroke-width="9"/>
+  <text x="240" y="252" text-anchor="middle" fill="#E9C878"
+        font-family="'Noto Sans Devanagari','Kohinoor Devanagari','Devanagari Sangam MN',sans-serif"
+        font-weight="700" font-size="150">नागरिक</text>
+  <text x="240" y="330" text-anchor="middle" fill="#F5EBD8"
+        font-family="Arial, Helvetica, sans-serif" letter-spacing="8"
+        font-size="26">CIVIC SENSE INDIA</text>
+</svg>
